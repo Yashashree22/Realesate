@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homeverse - Find your dream house</title>
+  <title>RealEsate</title>
 
   <!-- 
     - favicon
   -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
   <!-- 
     - custom css link
@@ -25,6 +26,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+
 </head>
 
 <body>
@@ -40,66 +42,12 @@
     <div class="header-top">
       <div class="container">
 
-        <ul class="header-top-list">
-
-          <li>
-            <a href="mailto:info@homeverse.com" class="header-top-link">
-              <ion-icon name="mail-outline"></ion-icon>
-
-              <span>info@homeverse.com</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="header-top-link">
-              <ion-icon name="location-outline"></ion-icon>
-
-              <address>15/A, Nest Tower, NYC</address>
-            </a>
-          </li>
-
-        </ul>
-
-        <div class="wrapper">
-          <ul class="header-top-social-list">
-
-            <li>
-              <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-pinterest"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
-
-          <button class="header-top-btn">Add Listing</button>
-        </div>
-
-      </div>
-    </div>
 
     <div class="header-bottom">
       <div class="container">
 
         <a href="#" class="logo">
-          <img src="./assets/images/logo.png" alt="Homeverse logo">
+          <ion-icon name="business-outline"></ion-icon> RealEsate
         </a>
 
         <nav class="navbar" data-navbar>
@@ -133,10 +81,6 @@
 
               <li>
                 <a href="#property" class="navbar-link" data-nav-link>Property</a>
-              </li>
-
-              <li>
-                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
               </li>
 
               <li>
@@ -175,10 +119,76 @@
           </button>
 
         </div>
-
+        <div class="icons">
+          <i  id="login-btn"><a href="#" class="btn btn-secondary">SIGNUP</a></i>
       </div>
-    </div>
+  
+        <!-- <a href="#" class="btn btn-secondary">Signup</a> -->
+        <div class="loginform">
+          <i class="fas fa-times" id="form-close"></i>
+        <div action="">
+          <h1>SIGNUP</h1>
+          <!-- Username:<input type="text" id="username" placeholder="Enter your username"><br><br>
+        Password:<input type="password" id="password" placeholder="Enter your password"><br><br>
+                <button onclick="login()">Submit</button> -->
+                <!-- <form action="" class="form" id="form">
+                  <div class="input-control">
+                    <label for="username">Username:</label>
+                    <input id="username" name="username" type="text"><br><br>
+                  </div>
+                  <div class="error"></div>
+      
+                  <div class="input-control">
+                    <label for="email">Email:</label>
+                   <input id="email" name="email" type="text"><br><br>
+                  </div>
+                  <div class="error"></div>
+      
+                  <div class="input-control">
+                    <label for="password">Password:</label>
+                    <input id="password" name="password" type="password"><br><br>
+                  </div>
+                  <div class="error"></div>
+      
+                  <div class="input-control">
+                    <label for="password2">Password again:</label>
+                    <input id="password2" name="password2" type="password"><br><br>
+                  </div>
+                  <div class="error"></div>
+                  <input type="submit" value="Submit" class="btn">
+              </form> -->
+              <form  name="myForm" method="post">
+                <div class="formpage" id="name">
+                    Name: <input type="text" name="fname"  required placeholder="Enter name"><br> <br>
+                </div>
+        
+                <div class="formpage" id="email">
+                    Email: <input type="email" name="femail" id="femail1" required placeholder="Enter Email"><br><br>
+                </div> 
+        
+                <div class="formpage" id="phone">
+                    Phone: <input type="phone" name="fphone" id="fphone1" x` required placeholder="Enter Phone no"><br><br>
+                </div>
+        
+                <div class="formpage" id="pass">
+                    Password: <input type="password" name="fpass" id="fpass1" required placeholder="password"><br><br>
+                </div>
+        
+                <div class="formpage" id="cpass">
+                    Confirm Password: <input type="password" onblur="valsubmit()" name="fcpass" id="fcpass1"  required placeholder="Confirm password"><br>
+                </div>
 
+                <button class="but" id="but12" type="submit" disabled  onclick="alert('submitted')">Submit</button>
+                </form>
+        
+          </div>
+        </div>
+
+
+
+
+      
+  </div>
   </header>
 
 
@@ -203,18 +213,18 @@
               <span>Real Estate Agency</span>
             </p>
 
-            <h2 class="h1 hero-title">Find Your Dream House By Us</h2>
+            <h2 class="h1 hero-title">Find Your Dream House</h2>
 
             <p class="hero-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-            </p>
+              A great plateform to buy, sell and rent your properties without any agent or commisions.
+            </p> 
 
-            <button class="btn">Make An Enquiry</button>
+            <button class="btn"> Make An Enquiry</button>
 
           </div>
 
           <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.png" alt="Modern house model" class="w-100">
+            <img src="./assets/images/hero-banner.jpg" alt="Modern house model" class="w-100">
           </figure>
 
         </div>
@@ -286,8 +296,11 @@
             </ul>
 
             <p class="callout">
-              "Enimad minim veniam quis nostrud exercitation
-              llamco laboris. Lorem ipsum dolor sit amet"
+              "Hously developed a platform for the Real Estate marketplace that allows buyers and sellers to easily
+              execute a
+              transaction on their own. The platform drives efficiency, cost transparency and control into the hands of
+              the consumers.
+              Hously is Real Estate Redefined."
             </p>
 
             <a href="#service" class="btn">Our Services</a>
@@ -427,7 +440,7 @@
                     <button class="banner-actions-btn">
                       <ion-icon name="location"></ion-icon>
 
-                      <address>Belmont Gardens, Chicago</address>
+                      <address>Mumbai ,INDIA</address>
                     </button>
 
                     <button class="banner-actions-btn">
@@ -449,35 +462,17 @@
                 <div class="card-content">
 
                   <div class="card-price">
-                    <strong>$34,900</strong>/Month
+                    <strong>RS 50,000</strong>/Month
                   </div>
 
                   <h3 class="h3 card-title">
                     <a href="#">New Apartment Nice View</a>
                   </h3>
 
-                  <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                  </p>
-
+            
                   <ul class="card-list">
 
-                    <li class="card-item">
-                      <strong>3</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
-                    </li>
-
+                    
                     <li class="card-item">
                       <strong>3450</strong>
 
@@ -494,13 +489,11 @@
 
                   <div class="card-author">
 
-                    <figure class="author-avatar">
-                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
+                    
 
                     <div>
                       <p class="author-name">
-                        <a href="#">William Seklo</a>
+                        <a href="#">ABC</a>
                       </p>
 
                       <p class="author-title">Estate Agents</p>
@@ -545,7 +538,7 @@
                     <button class="banner-actions-btn">
                       <ion-icon name="location"></ion-icon>
 
-                      <address>Belmont Gardens, Chicago</address>
+                      <address>Mumbai ,INDIA</address>
                     </button>
 
                     <button class="banner-actions-btn">
@@ -567,35 +560,17 @@
                 <div class="card-content">
 
                   <div class="card-price">
-                    <strong>$34,900</strong>/Month
+                    <strong>RS 50,000</strong>/Month
                   </div>
 
                   <h3 class="h3 card-title">
                     <a href="#">Modern Apartments</a>
                   </h3>
 
-                  <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                  </p>
-
+            
                   <ul class="card-list">
 
-                    <li class="card-item">
-                      <strong>3</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
-                    </li>
-
+                    
                     <li class="card-item">
                       <strong>3450</strong>
 
@@ -612,13 +587,11 @@
 
                   <div class="card-author">
 
-                    <figure class="author-avatar">
-                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
+                    
 
                     <div>
                       <p class="author-name">
-                        <a href="#">William Seklo</a>
+                        <a href="#">ABC</a>
                       </p>
 
                       <p class="author-title">Estate Agents</p>
@@ -663,7 +636,7 @@
                     <button class="banner-actions-btn">
                       <ion-icon name="location"></ion-icon>
 
-                      <address>Belmont Gardens, Chicago</address>
+                      <address>Mumbai ,INDIA</address>
                     </button>
 
                     <button class="banner-actions-btn">
@@ -685,35 +658,17 @@
                 <div class="card-content">
 
                   <div class="card-price">
-                    <strong>$34,900</strong>/Month
+                    <strong>RS 50,000</strong>/Month
                   </div>
 
                   <h3 class="h3 card-title">
                     <a href="#">Comfortable Apartment</a>
                   </h3>
 
-                  <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                  </p>
-
+            
                   <ul class="card-list">
 
-                    <li class="card-item">
-                      <strong>3</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
-                    </li>
-
+                    
                     <li class="card-item">
                       <strong>3450</strong>
 
@@ -730,13 +685,11 @@
 
                   <div class="card-author">
 
-                    <figure class="author-avatar">
-                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
+                    
 
                     <div>
                       <p class="author-name">
-                        <a href="#">William Seklo</a>
+                        <a href="#">ABC</a>
                       </p>
 
                       <p class="author-title">Estate Agents</p>
@@ -781,7 +734,7 @@
                     <button class="banner-actions-btn">
                       <ion-icon name="location"></ion-icon>
 
-                      <address>Belmont Gardens, Chicago</address>
+                      <address>Mumbai ,INDIA</address>
                     </button>
 
                     <button class="banner-actions-btn">
@@ -803,35 +756,17 @@
                 <div class="card-content">
 
                   <div class="card-price">
-                    <strong>$34,900</strong>/Month
+                    <strong>RS 50,000</strong>/Month
                   </div>
 
                   <h3 class="h3 card-title">
                     <a href="#">Luxury villa in Rego Park</a>
                   </h3>
 
-                  <p class="card-text">
-                    Beautiful Huge 1 Family House In Heart Of Westbury. Newly Renovated With New Wood
-                  </p>
-
+            
                   <ul class="card-list">
 
-                    <li class="card-item">
-                      <strong>3</strong>
-
-                      <ion-icon name="bed-outline"></ion-icon>
-
-                      <span>Bedrooms</span>
-                    </li>
-
-                    <li class="card-item">
-                      <strong>2</strong>
-
-                      <ion-icon name="man-outline"></ion-icon>
-
-                      <span>Bathrooms</span>
-                    </li>
-
+                    
                     <li class="card-item">
                       <strong>3450</strong>
 
@@ -848,13 +783,11 @@
 
                   <div class="card-author">
 
-                    <figure class="author-avatar">
-                      <img src="./assets/images/author.jpg" alt="William Seklo" class="w-100">
-                    </figure>
+                    
 
                     <div>
                       <p class="author-name">
-                        <a href="#">William Seklo</a>
+                        <a href="#">ABC</a>
                       </p>
 
                       <p class="author-title">Estate Agents</p>
@@ -1037,191 +970,33 @@
 
         </div>
       </section>
+      <br><br>
 
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="h2 section-title">Contact us</h2>
 
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="blog" id="blog">
-        <div class="container">
-
-          <p class="section-subtitle">News & Blogs</p>
-
-          <h2 class="h2 section-title">Leatest News Feeds</h2>
-
-          <ul class="blog-list has-scrollbar">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-1.png" alt="The Most Inspiring Interior Design Of 2021" class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>by: Admin</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>Interior</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">The Most Inspiring Interior Design Of 2021</a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Apr 27, 2022</time>
+             <div class="container">
+                <div class="contact-box">
+                    <div class="left"></div>
+                    <div class="right">
+                        <h2>Contact Us</h2>
+                    <form action="https://formspree.io/f/xdovekkl" method="post">
+                        <input type="text" class="field" name="name" placeholder="Your Name">
+                        <input type="text" class="field" name="email"  placeholder="Your Email">
+                        <input type="text" class="field" name="phone" placeholder="Phone">
+                        <textarea placeholder="Message" name="message" class="field"></textarea>
+                        <button class="btn">Send</button>
+                    </form>
                     </div>
-
-                    <a href="#" class="read-more-btn">Read More</a>
-                  </div>
-
                 </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-2.jpg" alt="Recent Commercial Real Estate Transactions" class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>by: Admin</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>Estate</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">Recent Commercial Real Estate Transactions</a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Apr 27, 2022</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Read More</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-3.jpg" alt="Renovating a Living Room? Experts Share Their Secrets"
-                    class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>by: Admin</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>Room</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">Renovating a Living Room? Experts Share Their Secrets</a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Apr 27, 2022</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Read More</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
+            </div>
+    </section>
+ <br><br>
 
 
 
-
-
-      <!-- 
+    <!-- 
         - #CTA
       -->
 
@@ -1256,7 +1031,7 @@
     - #FOOTER
   -->
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
 
     <div class="footer-top">
       <div class="container">
@@ -1264,11 +1039,11 @@
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="./assets/images/logo-light.png" alt="Homeverse logo">
+            <ion-icon name="business-outline"></ion-icon> RealEsate
           </a>
 
           <p class="section-text">
-            Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.
+            A great plateform to buy, sell and rent your properties without any agent or commisions.
           </p>
 
           <ul class="contact-list">
@@ -1277,15 +1052,15 @@
               <a href="#" class="contact-link">
                 <ion-icon name="location-outline"></ion-icon>
 
-                <address>Brooklyn, New York, United States</address>
+                <address>Mumbai , India</address>
               </a>
             </li>
 
             <li>
-              <a href="tel:+0123456789" class="contact-link">
+              <a href="tel:+91 836955299" class="contact-link">
                 <ion-icon name="call-outline"></ion-icon>
 
-                <span>+0123-456789</span>
+                <span>+91 836955299</span>
               </a>
             </li>
 
@@ -1293,7 +1068,7 @@
               <a href="mailto:contact@homeverse.com" class="contact-link">
                 <ion-icon name="mail-outline"></ion-icon>
 
-                <span>contact@homeverse.com</span>
+                <span>contact@RealEsate.com</span>
               </a>
             </li>
 
@@ -1432,15 +1207,7 @@
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <div class="container">
-
-        <p class="copyright">
-          &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
-        </p>
-
-      </div>
-    </div>
+    
 
   </footer>
 
@@ -1457,7 +1224,7 @@
     - ionicon link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
 
 </body>
 
